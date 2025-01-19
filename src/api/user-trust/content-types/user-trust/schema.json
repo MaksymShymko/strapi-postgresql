@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_trusts",
+  "info": {
+    "singularName": "user-trust",
+    "pluralName": "user-trusts",
+    "displayName": "UserTrust"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user1": {
+      "type": "integer",
+      "required": true
+    },
+    "user2": {
+      "type": "integer",
+      "required": true
+    },
+    "trustStatus": {
+      "type": "enumeration",
+      "enum": [
+        "trusts",
+        "blocked",
+        "ignored",
+        "none"
+      ],
+      "required": true,
+      "default": "none"
+    }
+  }
+}
