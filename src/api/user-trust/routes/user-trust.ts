@@ -46,7 +46,7 @@ module.exports = {
     },
     {
       method: "GET",
-      path: "/trusted-list1",
+      path: "/trusting-list1",
       handler: "user-trust.trustedList1",
       config: {
         policies: [],
@@ -55,7 +55,7 @@ module.exports = {
     },
     {
       method: "GET",
-      path: "/trusted-list2",
+      path: "/trusting-list2",
       handler: "user-trust.trustedList2",
       config: {
         policies: [],
