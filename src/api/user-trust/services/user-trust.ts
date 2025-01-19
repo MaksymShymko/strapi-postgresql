@@ -240,8 +240,8 @@ export default factories.createCoreService(
       return { data: blockedMeUser };
     },
 
-    // GET /ignore-list
-    async ignoreList(ctx) {
+    // GET /ignored-list
+    async ignoredList(ctx) {
       const userId = await ctx.state.user.id;
       const trustMeRecords = await strapi
         .query("api::user-trust.user-trust")

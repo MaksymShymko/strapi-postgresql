@@ -932,10 +932,6 @@ export interface PluginUsersPermissionsUser
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    user_info: Schema.Attribute.Relation<
-      'oneToOne',
-      'api::user-info.user-info'
-    >;
     username: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.Unique &

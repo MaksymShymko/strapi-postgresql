@@ -82,8 +82,8 @@ module.exports = {
     },
     {
       method: "GET",
-      path: "/ignore-list",
-      handler: "user-trust.ignoreList",
+      path: "/ignored-list",
+      handler: "user-trust.ignoredList",
       config: {
         policies: [],
         middlewares: [],

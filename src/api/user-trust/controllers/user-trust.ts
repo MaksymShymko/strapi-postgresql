@@ -66,10 +66,10 @@ export default factories.createCoreController(
       return data;
     },
 
-    async ignoreList(ctx) {
+    async ignoredList(ctx) {
       const { data } = await strapi
         .service("api::user-trust.user-trust")
-        .ignoreList(ctx);
+        .ignoredList(ctx);
       return data;
     },
 
